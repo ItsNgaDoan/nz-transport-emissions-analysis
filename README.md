@@ -1,148 +1,93 @@
-# New Zealand Transport Emissions Analysis  
-Evaluating Energy Use, Emissions Efficiency, and Innovation Pathways  
+# Transport Emissions & Energy Analysis
 
-This project analyzes New Zealand’s transport sector to assess its **emissions intensity, energy consumption, and economic efficiency**, and benchmark its performance against other OECD countries.
+A data-driven analysis combining environmental, economic, and behavioural factors to understand emissions dynamics and inform sustainability strategies.
 
-The goal is to understand whether New Zealand is progressing toward its **emission reduction targets**, and what strategies can be learned from leading countries.
+This project explores the relationship between transport energy consumption and greenhouse gas (GHG) emissions across OECD countries, with a focus on New Zealand.
 
-
-## Overview  
-
-Transport is one of the **largest contributors to greenhouse gas emissions in New Zealand**, making it a critical sector for achieving national climate goals, including:
-
-- 50% emissions reduction by 2030 (NDC target)  
-- 41% reduction in transport emissions by 2035  
-- Net zero emissions by 2050 (Paris Agreement)  
-
-This project evaluates New Zealand’s performance using OECD data and identifies opportunities for improvement.
-
-The analysis focuses on three key dimensions:
-
-- **GHG Intensity** – emissions relative to economic output  
-- **Energy Consumption** – energy use in the transport sector  
-- **Transport Efficiency** – economic output generated per unit of emissions  
+Developed as part of a **group project in Business Analytics Tools course**, the analysis integrates multiple datasets and applies data analysis, statistical methods, and data collection techniques to uncover key patterns in sustainability and economic growth.
 
 
-## Data and Methodology  
+## Overview
 
-The analysis is built on a core OECD dataset and enriched with additional indicators to provide a multi-dimensional view of transport emissions.
+To understand how emissions evolve and what drives them, this project analyzes data from **2012 to 2021 across OECD countries**.
 
-### Data sources
-- OECD Data Explorer (GHG emissions, GDP, energy consumption)  
+The analysis integrates multiple datasets, including:
+- GHG emissions and transport energy use  
+- GDP and economic indicators  
+- External innovation data collected via web scraping  
 
-### Approach
-1. Collected and combined multiple datasets across OECD countries  
-2. Performed data cleaning and transformation (handling missing values, aligning formats)  
-3. Calculated key metrics:
-   - GHG Intensity = Emissions / GDP  
-   - Transport Efficiency = GDP / Transport Emissions  
-4. Conducted **correlation analysis** to examine relationships between energy use and emissions  
-5. Applied **web scraping (Python)** to collect global patent data on emission reduction technologies  
-6. Benchmarked New Zealand against leading countries  
+The goal is to assess:
+- Whether New Zealand is improving in emissions efficiency  
+- What factors drive transport-related emissions  
+- How economic growth interacts with environmental impact  
 
 
-## Key Findings  
+## Key Insights
 
-### 1. New Zealand shows slower progress in emissions intensity  
-- GHG intensity decreased by approximately **28%**, indicating progress  
-- However, New Zealand still lags behind top-performing OECD countries  
+**1. New Zealand is improving — but still above benchmark**  
+Transport GHG intensity has declined over time, but remains higher than the OECD median, indicating room for improvement.
 
+**2. Economic growth does not guarantee emissions efficiency**  
+Countries with strong GDP growth do not always achieve proportional reductions in emissions intensity. New Zealand shows moderate improvement but not leading performance.
 
-### 2. Strong link between energy use and emissions  
-- Correlation between transport emissions and energy consumption:  
-  - **New Zealand: 0.68**  
-  - **OECD average: 0.57**  
+**3. Transport energy use is a key driver of emissions**  
+A strong positive relationship exists between transport energy consumption and emissions across countries. New Zealand follows this pattern.
 
-This suggests New Zealand’s emissions are **more sensitive to energy consumption**, indicating lower efficiency.
-
-
-### 3. Lower efficiency in economic output per emission  
-- New Zealand generates **less GDP per unit of transport emissions** compared to leading countries  
-- This highlights inefficiencies in converting energy use into economic value  
+**4. The relationship is consistent over time**  
+Correlation between energy use and emissions remains stable across years (~0.5–0.6), reinforcing the structural nature of this relationship.
 
 
-### 4. Innovation plays a key role in emissions reduction  
-To understand how leading countries reduce emissions, a **Python-based web scraping approach** was used to collect patent data related to:
+## Key Visual Insights
 
-- emission reduction technologies  
-- renewable energy in transport  
-- sustainable fuel systems  
+### 1. GHG Intensity Trend (2012–2021)
+![GHG Intensity](screenshots/q1-ghg-intensity.png)
 
-Leading countries invest in:
-- electric vehicle incentives (Denmark)  
-- advanced biofuels and hydrogen (Japan)  
-- rail-based logistics systems (Germany, Spain)  
+### 2. Economic Growth vs Emission Efficiency
+![GDP vs GHG](screenshots/q3-efficiency.png)
 
+### 3. Transport Emissions vs Energy Use
+![Energy vs Emissions](screenshots/q2-energy-vs-emissions.png)
 
-## Strategic Implications  
-
-### Improve energy efficiency in transport  
-New Zealand’s high correlation between energy use and emissions suggests a need to **improve efficiency**, not just reduce consumption.
+### 4. Correlation Trend Over Time
+![Correlation](screenshots/correlation-trend.png)
 
 
-### Accelerate adoption of clean technologies  
-Policies such as:
-- EV incentives  
-- renewable fuels  
-- hydrogen technologies  
+## Data & Methodology
 
-can significantly improve emissions performance.
+The analysis combines multiple datasets and techniques:
 
-
-### Invest in alternative transport systems  
-Rail-based logistics and public transport systems offer **long-term emission reductions** while maintaining economic productivity.
+- Data cleaning and transformation using Python (pandas, numpy)  
+- Exploratory Data Analysis (EDA) to identify trends and patterns  
+- Statistical analysis including correlation and regression  
+- Data integration across economic and environmental datasets  
+- Web scraping (Selenium, BeautifulSoup) to collect external innovation data  
 
 
-### Use benchmarking for decision-making  
-Cross-country comparison provides a **data-driven framework** to evaluate and improve national strategies.
+## Tools
 
-
-## Technical Implementation  
-
-- Built using **Python (Jupyter Notebook)** for data analysis and web scraping  
-- Performed correlation analysis and metric calculations  
-- Developed a **web scraper** to extract patent data from Google Patents  
-- Integrated datasets into a unified analytical workflow  
-
-
-## Analysis Preview  
-
-![GHG Intensity](./screenshots/q1-ghg-intensity.png)
-
-![Transport Emissions vs Energy](./screenshots/q2-transport-emissions-vs-energy.png)
-
-![Transport Efficiency](./screenshots/q3-efficiency.png)
-
-![Patent Analysis](./screenshots/q4-patents.png)
-
-![Implications](./screenshots/implications.png)
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Jupyter Notebook  
+- Selenium & BeautifulSoup (web scraping)  
 
 
 ## Important Note  
 
 The visualisations in this repository are static representations of the analysis.
 
-For full reproducibility and detailed exploration, please refer to the Jupyter Notebook:
-
-👉 `transport-emissions-analysis.ipynb`
+For full reproducibility and detailed exploration, please refer to the Jupyter Notebook: `transport-emissions-analysis.ipynb`
 
 
-## My role and contribution  
+## Acknowledgement  
 
-This project was completed as part of a group assignment.
-
-My contributions focused on the data preparation and analytical workflow:
-
-- identified and integrated relevant datasets to support the analysis and shape the project narrative  
-- performed data cleaning, wrangling, and transformation across multiple sources  
-- combined datasets into a structured format ready for analysis  
-- developed the Python notebook to conduct analysis and present results  
-- contributed to translating analytical outputs into clear, structured insights  
+This project was developed as part of coursework at the University of Auckland - Business Analytics Tools course.  
+Concepts and techniques were informed by lecture materials, with the implementation and analysis completed independently.
 
 
-## Tools and Technologies  
+## My Role & Contribution
 
-- Python (pandas, numpy, matplotlib, seaborn)  
-- Web scraping (Selenium / requests / BeautifulSoup)  
-- Jupyter Notebook  
-- OECD Data Explorer  
+- Explored and integrated multiple datasets to build the analytical story  
+- Performed data cleaning, transformation, and preparation for analysis  
+- Conducted exploratory data analysis (EDA) and statistical analysis  
+- Analyzed relationships between emissions, energy use, and economic growth  
+- Implemented web scraping to collect additional external data  
+- Developed the full Python notebook for analysis and visualisation  
