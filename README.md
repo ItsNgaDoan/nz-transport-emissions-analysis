@@ -74,7 +74,7 @@ The analysis combines multiple datasets and techniques:
 
 The visualisations in this repository are static representations of the analysis.
 
-For full reproducibility and detailed exploration, please refer to the Jupyter Notebook: `transport-emissions-analysis.ipynb`
+For full reproducibility and detailed exploration, please refer to the Jupyter Notebook: [transport-emissions-analysis.ipynb](./transport-emissions-analysis.ipynb)
 
 
 ## Acknowledgement  
