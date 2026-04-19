@@ -40,13 +40,13 @@ Correlation between energy use and emissions remains stable across years (~0.5â€
 ## Key Visual Insights
 
 ### 1. GHG Intensity Trend (2012â€“2021)
-![GHG Intensity](screenshots/q1-ghg-intensity.png)
+![Intensity](screenshots/intensity-trend.png)
 
 ### 2. Economic Growth vs Emission Efficiency
-![GDP vs GHG](screenshots/q3-efficiency.png)
+![GDP vs GHG](screenshots/gdp-ghg-change.png)
 
 ### 3. Transport Emissions vs Energy Use
-![Energy vs Emissions](screenshots/q2-energy-vs-emissions.png)
+![Scatter](screenshots/ghg-vs-energy.png)
 
 ### 4. Correlation Trend Over Time
 ![Correlation](screenshots/correlation-trend.png)
