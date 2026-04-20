@@ -91,3 +91,9 @@ Concepts and techniques were informed by lecture materials, with the implementat
 - Analyzed relationships between emissions, energy use, and economic growth  
 - Implemented web scraping to collect additional external data  
 - Developed the full Python notebook for analysis and visualisation  
+
+
+## Academic Use Notice
+
+This project was completed as part of a group assignment at the University of Auckland and is shared for educational and portfolio purposes only.
+The work presented reflects collaborative academic effort. Unauthorised use, reproduction, or redistribution may violate academic integrity policies.
